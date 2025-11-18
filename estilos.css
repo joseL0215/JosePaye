@@ -40,7 +40,7 @@ nav ul{
 }
 nav ul li a {
     color: white;
-    background-color: #05345d;
+    background-color: #b1b8be;
     text-decoration: none;
     padding: 8px 12px;
     border-radius: 5px;
@@ -66,7 +66,7 @@ article{
     background-color: white;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px #722e25;
+    box-shadow: 0 2px 5px #382396;
 }
 article img{
     width: 600px;
