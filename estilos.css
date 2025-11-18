@@ -10,7 +10,7 @@ body{
 
     justify-content: flex-end;
     background-color: #f5f5f5;
-    color: #333;
+    color: #5274e4;
     line-height: 1.6;
     padding: 20px;
 
@@ -47,7 +47,7 @@ nav ul li a {
     transition: backbround-color 0.7s;
 }
 nav ul li a:hover {
-     background-color: #d6dce2;
+     background-color: #357dc5;
      border-radius: 10px;
 }
 #entregable{
