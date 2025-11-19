@@ -63,10 +63,10 @@ section{
 }
 article{
     flex: 2;
-    background-color: white;
+    background-color: rgba(98, 107, 189, 0.575);
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px #543fbee0;
+    box-shadow: 0 2px 5px #6357a1e0;
 }
 article img{
     width: 600px;
