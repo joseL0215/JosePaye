@@ -1,53 +1,93 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Ejemplos en JS</title>
-        <link rel="icon" href="https://tse1.mm.bing.net/th/id/OIP.SxFpcYw_rJm7qvj9zP_1BQHaHa?pid=Api">
-         <link rel="stylesheet" href="css/estilos.css">
-         <script src="js/primerejemplo.js"></script>
-       
-    </head>
-    <body>
-       <header>
-         <a href="index.html">
-            <img id="logo" src="https://tse1.mm.bing.net/th/id/OIP.SxFpcYw_rJm7qvj9zP_1BQHaHa?pid=Api" alt="logo senati" with="300" height="300">
-            </a>
-            <h1>PRACTICANDO JS</h1>
-            <h2>Ejemplos con JavaScript</h2>
-       </header>
-       <nav>
-          <ul id="menu">
-             <li><a href="index.html">Inicio</a></li> 
-             <li><a href="Mi primera Pagina.html">Primera Pagina</a></li>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página con Botones</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <img id="logo" 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCXqAa5-8BuVTjd9N-07TW0AeObunL1qh92g&s"
+            width="250">
+
+        <h1 id="titulo1">Página Interactiva</h1>
+        <h2 id="titulo2">Usando JavaScript</h2>
+    </header>
+
+    <nav>
+        <ul id="menu">
+            <li><a href="Mi Primera Pagina.html">Primera Pagina</a></li>
             <li><a href="Segunda Pagina.html">Segunda Pagina</a></li>
             <li><a href="Tercera Pagina.html">Tercera Pagina</a></li>
-            <li><a href="Cuarta pagina.html">Cuarta Pagina</a></li>
-             <li><a href="Quinta pagina.html">Quinta Pagina</a></li>
-             <li><a href="Pagina Personal.html">Pagina Personal</a></li>
-             <li><a href="noHay.html">ENTREGABLE</a></li>
-           </ul> 
-       </nav>
-       <section>
-         <article>
-         <h3 id="Subtitulo">Primer Ejemplo con JS</h3>
-         <img id="carita" src="imagenes/feliz.jpeg" alt="happy" width="100px">
-         
-         <iframe src="https://senatipe-my.sharepoint.com/personal/agonzalezq_senati_pe/_layouts/15/embed.aspx?UniqueId=8093ca79-c83a-4ae0-973e-5e95d8a981fc&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="560" height="315" frameborder="0" scrolling="no" allowfullscreen title="202520-PIAD-218-TAL-NRC_12126001652816-20251119_115826-Grabación de la reunión.mp4"></iframe>
+            <li><a href="Cuarta Pagina.html">Cuarta Pagina</a></li>
+            <li><a href="Quinta Pagina.html">Quinta Pagina</a></li>
+            <li><a href="Pagina Personal.html">Pagina Personal</a></li>
+            <li><a>ENTREGABLE</a></li>
+        </ul>
+    </nav>
+
+    <section>
+
+        <article>
+            <h3 id="Subtitulo">Ejemplo con JS</h3>
+            
+            <img id="carita" src="imagenes/feliz.jpeg" width="350">
+
+            <p id="texto1">La vida e bonita mano</p>
+            <p id="texto2">No se ponga asi</p>
+            <p id="texto3">Tu eres el futuro del cerru</p>
+
+            <img src="imagenes/corazon.jpeg" width="250" alt="Imagen de ejemplo">
         </article>
-        <aside> 
-          <button onclick="triste()">triste</button>
-          <button onclick="feliz()">feliz</button>
-          <button onclick="cambiarColor()">Cambiar Color</button>
-          <button onclick="cambiarLogo()">Cambiar Logo</button>
-          <button onclick="cambiarFondo()">Cambiar Color de Menu</button>
-          <button onclick="cambiodeTexto()">Cambiar Texto</button>
+
+        <aside id="aside">
+
+            <h3>Botones</h3>
+
+            <button onclick="triste()">Triste</button>
+            <button onclick="feliz()">Feliz</button>
+            <button onclick="cambiarColor()">Color Menú</button>
+            <button onclick="cambiarLogo()">Cambiar Logo</button>
+            <button onclick="cambiarFondo()">Fondo Menú</button>
+            <button onclick="cambiodeTexto()">Cambiar Subtitulo</button>
+            <button onclick="cambiarFondo3()">Cambiar Aside</button>
+
+            <hr>
+
+            <button onclick="mostrarMensaje1()">Mensaje 1</button>
+            <button onclick="mostrarMensaje2()">Mensaje 2</button>
+            <button onclick="mostrarMensaje3()">Mensaje 3</button>
+            <button onclick="mostrarMensaje4()">Mensaje 4</button>
+            <button onclick="mostrarMensaje5()">Mensaje 5</button>
+            <button onclick="mostrarMensaje6()">Mensaje 6</button>
+
+            <hr>
+
+            <button onclick="cambiarFondoGeneral()">Fondo General</button>
+            <button onclick="cambiarTextoGeneral()">Color Texto</button>
+            <button onclick="aumentarTamaño()">A+</button>
+            <button onclick="reducirTamaño()">A-</button>
+
+            <hr>
+
+            <button onclick="cambiarSubtituloA()">Título A</button>
+            <button onclick="cambiarSubtituloB()">Título B</button>
+
         </aside>
-       </section>
-       <footer>
+
+    </section>
+
+    <footer>
  <a href="https://github.com/joseL0215/JosePaye" target="_blank">Repositorio personal</a>
          <a href="https://arnoldbgq.github.io/arnoldgonzalez/" target="_blank">Página del Instructor</a>
          <a href="https://senati.blackboard.com" target="_blank">Blackboard</a>
             <p>2025 - Segundo Semestre - Todo los Derechos Reservados </p>
        </footer>
-    </body>
+
+    <script src="primerejemplo.js"></script>
+
+</body>
 </html>
