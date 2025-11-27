@@ -1,19 +1,17 @@
-function calcularArea() {
-    let largo = parseFloat(document.getElementById("largo").value);
-    let ancho = parseFloat(document.getElementById("ancho").value);
-    let resultado = document.getElementById("resultado");
+function obtenerValores() {
+    return {
+        largo: parseFloat(document.getElementById("largo").value),
+        ancho: parseFloat(document.getElementById("ancho").value),
+        resultado: document.getElementById("resultado")
+    };
+}
 
-    let area = largo * ancho;
-    resultado.innerHTML = "Área del terreno: " + area;
+function calcularArea() {
+    const {largo, ancho, resultado} = obtenerValores();
+    resultado.innerHTML = "Área del terreno: " + (largo * ancho);
 }
 
 function calcularPerimetro() {
-    let largo = parseFloat(document.getElementById("largo").value);
-    let ancho = parseFloat(document.getElementById("ancho").value);
-    let resultado = document.getElementById("resultado");
-
-    let perimetro = 2 * largo + 2 * ancho;
-    resultado.innerHTML = "Perímetro del terreno: " + perimetro;
+    const {largo, ancho, resultado} = obtenerValores();
+    resultado.innerHTML = "Perímetro del terreno: " + (2 * largo + 2 * ancho);
 }
-
-
