@@ -49,7 +49,6 @@ function mostrarMensaje4(){ alert("Alerta, no me toques tanto"); }
 function mostrarMensaje5(){ alert("Mucho me apretas oe"); }
 function mostrarMensaje6(){ alert("Tarea 3 complete"); }
 
-
 function cambiarFondoGeneral(){
     document.body.style.background = "#95ce66ff";
     alert("Fondito ma verdecito");
