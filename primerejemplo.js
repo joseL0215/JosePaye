@@ -1,6 +1,3 @@
-// ---------------------------
-// FUNCIONES ORIGINALES + ALERTAS
-// ---------------------------
 
 function triste(){
     const img = document.getElementById('carita');
@@ -35,7 +32,7 @@ function cambiarFondo(){
 function cambiodeTexto(){
     const sub = document.getElementById('Subtitulo');
     if(sub) sub.textContent = "ASI TA MA BONITO?";
-    alert("AAAAA");
+    alert("Asi se ve mejor papum??");
 }
 
 function cambiarFondo3(){
@@ -45,27 +42,17 @@ function cambiarFondo3(){
 }
 
 
+function mostrarMensaje1(){ alert("Ya me la se al JS"); }
+function mostrarMensaje2(){ alert("Full chat yipiti"); }
+function mostrarMensaje3(){ alert("Sin miedo al exitooo"); }
+function mostrarMensaje4(){ alert("Alerta, no me toques tanto"); }
+function mostrarMensaje5(){ alert("Mucho me apretas oe"); }
+function mostrarMensaje6(){ alert("Tarea 3 complete"); }
 
-// ---------------------------
-// 6 BOTONES CON ALERT
-// ---------------------------
-
-function mostrarMensaje1(){ alert("Mensaje 1"); }
-function mostrarMensaje2(){ alert("Mensaje 2"); }
-function mostrarMensaje3(){ alert("Mensaje 3"); }
-function mostrarMensaje4(){ alert("Mensaje 4"); }
-function mostrarMensaje5(){ alert("Mensaje 5"); }
-function mostrarMensaje6(){ alert("Mensaje 6"); }
-
-
-
-// ---------------------------
-// 4 CAMBIOS + ALERTA
-// ---------------------------
 
 function cambiarFondoGeneral(){
-    document.body.style.background = "#dfe20eff";
-    alert("Fondo cambiado");
+    document.body.style.background = "#e20e0eff";
+    alert("Fondito ma rojito");
 }
 
 function cambiarTextoGeneral(){
