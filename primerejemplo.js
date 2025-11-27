@@ -51,8 +51,8 @@ function mostrarMensaje6(){ alert("Tarea 3 complete"); }
 
 
 function cambiarFondoGeneral(){
-    document.body.style.background = "#e20e0eff";
-    alert("Fondito ma rojito");
+    document.body.style.background = "#95ce66ff";
+    alert("Fondito ma verdecito");
 }
 
 function cambiarTextoGeneral(){
