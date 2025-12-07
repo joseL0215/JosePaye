@@ -1,0 +1,251 @@
+/* -----------------------
+   PALETA DE COLORES
+------------------------ */
+:root {
+  --verde: #9dd9b8;
+  --verde-oscuro: #0f4c3b;
+  --celeste: #b8e7f5;
+  --blanco: #ffffff;
+  --gris-texto: #5b6c5d;
+  --radius: 14px;
+  --sombra: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+/* -----------------------
+   ESTILOS GENERALES
+------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: #f5fdf9;
+  color: var(--gris-texto);
+}
+
+/* -----------------------
+   NAVBAR
+------------------------ */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 30px;
+  background: var(--verde);
+  box-shadow: var(--sombra);
+}
+
+nav .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--verde-oscuro);
+}
+
+nav .badge {
+  background: var(--celeste);
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin-right: 4px;
+}
+
+nav .nav-links a {
+  margin-left: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--verde-oscuro);
+  transition: 0.2s;
+}
+
+nav .nav-links a:hover {
+  color: #073224;
+}
+
+/* -----------------------
+   HERO
+------------------------ */
+.hero, .eco-hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #e9fdf2, #f0fbff);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.hero h1, 
+.eco-hero-title {
+  color: var(--verde-oscuro);
+  font-size: 2.6rem;
+  margin-bottom: 12px;
+}
+
+.hero p,
+.eco-hero-text {
+  color: var(--gris-texto);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+/* -----------------------
+   BOTONES
+------------------------ */
+.btn,
+.eco-btn-primary,
+.eco-btn-secondary {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.btn-verde,
+.eco-btn-primary {
+  background: var(--celeste);
+  color: var(--verde-oscuro);
+  box-shadow: var(--sombra);
+}
+
+.btn-verde:hover,
+.eco-btn-primary:hover {
+  background: #aee0ef;
+}
+
+.btn-celeste,
+.eco-btn-secondary {
+  background: var(--verde);
+  color: var(--verde-oscuro);
+  margin-left: 10px;
+  box-shadow: var(--sombra);
+}
+
+.btn-celeste:hover,
+.eco-btn-secondary:hover {
+  background: #8fcead;
+}
+
+/* -----------------------
+   TARJETAS Y PRODUCTOS
+------------------------ */
+.card {
+  background: var(--blanco);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--sombra);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* -----------------------
+   FORMULARIOS
+------------------------ */
+input, textarea {
+  padding: 12px;
+  border-radius: var(--radius);
+  border: 1px solid #cccccc;
+  width: 100%;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* -----------------------
+   FOOTER
+------------------------ */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--gris-texto);
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+/* -----------------------
+   CATEGORÍAS EN PRODUCTOS.HTML
+------------------------ */
+
+/* Contenedor */
+.categorias-container {
+  padding: 40px 20px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* Cuadros de categoría */
+.categoria-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/* Imagen */
+.categoria-box img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.55;
+  z-index: -1;
+}
+
+/* Título */
+.categoria-box h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  text-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+/* Hover */
+.categoria-box:hover {
+  transform: scale(1.05);
+  background: rgba(0,0,0,0.6);
+}
+
+/* HERO de productos */
+.categoria-hero {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #e9fdf2, #f0fbff);
+}
+/* FOOTER MODERNO CON CRÉDITOS */
+.footer-eco {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 30px;
+  color: var(--gris-texto);
+  font-size: 0.9rem;
+  background: #f5fdf9;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.footer-right {
+  font-weight: 600;
+  color: var(--verde-oscuro);
+}

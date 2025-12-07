@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoMarket - Inicio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Fondo personalizado del héroe */
+    .hero-inicio {
+      background: url('https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Frawismyreligion.com%2Fwp-content%2Fuploads%2FEcorganic-ecomarket-ondara-13-1536x1152.jpg&sp=1765143981T7f705d306e1deed9987ac635117d6c0216bae5d5575a7114e1cee2347b9f7499') center/cover no-repeat;
+      padding: 120px 20px;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    /* Capa oscura para leer mejor */
+    .hero-inicio::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+      backdrop-filter: blur(2px);
+    }
+
+    .hero-contenido {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .categoria-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      margin-top: 40px;
+      padding: 0 30px;
+    }
+
+    .categoria-card {
+      background: white;
+      padding: 20px;
+      border-radius: var(--radius);
+      box-shadow: var(--sombra);
+      text-align: center;
+    }
+
+    .categoria-card h3 {
+      color: var(--verde-oscuro);
+      margin-bottom: 10px;
+    }
+
+    .categoria-card a {
+      display: inline-block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo"><span class="badge">Eco</span>Market</div>
+  <div class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="frutas.html">Frutas</a>
+    <a href="verduras.html">Verduras</a>
+    <a href="carnes.html">Carnes</a>
+    <a href="otros.html">Otros</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="libro de reclamaciones.html">Libro de reclamaciones</a>
+  </div>
+</nav>
+
+<!-- HERO CON IMAGEN DE FONDO -->
+<section class="hero-inicio">
+  <div class="hero-contenido">
+    <h1 class="eco-hero-title" style="color:white;">Bienvenido a EcoMarket</h1>
+    <p class="eco-hero-text" style="color:#e0e0e0;">
+      Productos frescos, saludables y ecológicos para tu vida diaria.
+    </p>
+
+    <a href="productos.html" class="eco-btn-primary" style="margin-top:20px;">Ver todos los productos</a>
+  </div>
+</section>
+
+<!-- SECCIÓN DE CATEGORÍAS -->
+<main style="padding:40px 20px; text-align:center;">
+  <h2 class="eco-title">
+    <span class="e
+
+    <footer class="footer-eco">
+  <div class="footer-left">
+    © 2025 EcoMarket — Tienda ecológica.
+  </div>
+  <div class="footer-right">
+    Hecho por Jose Luis Paye Atencio
+  </div>
+</footer>
